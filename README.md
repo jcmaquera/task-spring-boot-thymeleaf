@@ -17,3 +17,6 @@ Run this command in the current directory
 
 # Run the application:
 `docker-compose up`
+
+# Access Endpoint
+http://localhost:8080
