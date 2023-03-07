@@ -21,14 +21,14 @@ public class TaskController {
     @GetMapping("/")
     public String homePage(Model model){
         model.addAttribute("listTasks", taskService.getAllTasks());
-        return "/index/index";
+        return "index";
     }
 
     @GetMapping("/showTaskForm")
     public String showTask(Model model){
         TaskRequest taskRequest = new TaskRequest();
         model.addAttribute("task", taskRequest);
-        return "/index/add_task";
+        return "add_task";
     }
 
     @PostMapping("/saveTask")
@@ -41,7 +41,7 @@ public class TaskController {
     public String showUpdate(@PathVariable(value = "id") long id, Model model){
         TaskRequest taskRequest = taskService.getTaskId(id);
         model.addAttribute("task", taskRequest);
-        return "index/update_task";
+        return "update_task";
     }
 
     @GetMapping("/deleteTask/{id}")
