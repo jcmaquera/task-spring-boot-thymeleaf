@@ -8,3 +8,15 @@ Input your username and password
 
 ![image](https://user-images.githubusercontent.com/120351262/213962329-100d0944-d26e-428a-acdd-58fc5d3bd637.png)
 
+# Convert the Application to JAR File
+Run this command in the current directory
+`./mvnw clean package -DskipTests`
+  
+# Build docker file:
+`docker build -t task-app .`
+
+# Run the application:
+`docker-compose up`
+
+# Access Endpoint
+http://localhost:8080
