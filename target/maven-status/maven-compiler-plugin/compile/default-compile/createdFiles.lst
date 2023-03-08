@@ -1,0 +1,6 @@
+com\example\demo\Controller\TaskController.class
+com\example\demo\Service\TaskService.class
+com\example\demo\Service\TaskServiceImpl.class
+com\example\demo\Entity\TaskRequest.class
+com\example\demo\Repository\TaskRepository.class
+com\example\demo\TaskSpringBootThymeleaf.class
